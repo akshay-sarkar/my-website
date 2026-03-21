@@ -6,6 +6,9 @@ import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Education from '@/components/Education'
+import Certifications from '@/components/Certifications'
+import Awards from '@/components/Awards'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Akshay Sarkar — Senior Full Stack Engineer',
@@ -27,6 +30,9 @@ export default function Home() {
       <Skills />
       <Projects />
       <Education />
+      <Certifications />
+      <Awards />
+      <Footer />
     </main>
   )
 }
