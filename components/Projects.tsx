@@ -21,7 +21,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <motion.div
               key={project.name}
-              className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-3 hover:shadow-md transition-shadow"
+              className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-3 hover:shadow-md transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

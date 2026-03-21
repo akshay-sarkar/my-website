@@ -22,7 +22,7 @@ export default function Education() {
           {education.map((edu, i) => (
             <motion.div
               key={edu.institution}
-              className="bg-white border border-slate-200 rounded-xl p-6 flex gap-4 hover:shadow-md transition-shadow"
+              className="bg-white border border-slate-200 rounded-xl p-6 flex gap-4 hover:shadow-md transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

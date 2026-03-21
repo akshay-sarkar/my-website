@@ -33,7 +33,7 @@ export default function Skills() {
                 {group.items.map((skill) => (
                   <span
                     key={skill}
-                    className={`px-3 py-1 rounded-full text-xs font-medium font-mono ${skillCategoryColors[group.category]}`}
+                    className={`px-3 py-1 rounded-full text-xs font-medium font-mono ${skillCategoryColors[group.category] ?? 'bg-slate-100 text-slate-700'}`}
                   >
                     {skill}
                   </span>
