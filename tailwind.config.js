@@ -12,7 +12,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
+        mono: ['var(--font-fira-code)', 'Fira Code', 'monospace'],
       },
     },
   },
