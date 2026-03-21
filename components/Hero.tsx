@@ -53,15 +53,17 @@ export default function Hero() {
       >
         <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-lg border-4 border-slate-100 bg-slate-100 flex items-center justify-center relative">
           <Image
-            src="/photo-placeholder.png"
+            src={personal.photoUrl ?? '/photo-placeholder.png'}
             alt={`${personal.name} — profile photo`}
             fill
             className="object-cover"
             priority
           />
-          <span className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm font-mono pointer-events-none select-none">
-            Add Photo
-          </span>
+          {personal.photoUrl === undefined && (
+            <span className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm font-mono pointer-events-none select-none">
+              Add Photo
+            </span>
+          )}
         </div>
       </motion.div>
     </section>

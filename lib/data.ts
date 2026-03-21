@@ -8,6 +8,7 @@ export const personal = {
   linkedin: 'https://www.linkedin.com/in/akshaysarkaruta/',
   github: 'https://github.com/akshay-sarkar',
   resumeUrl: '/akshay-sarkar-resume.pdf',
+  photoUrl: undefined as string | undefined,  // Set to '/your-photo.jpg' when ready
 }
 
 export const about = `Senior Full Stack Engineer with 12+ years of experience architecting enterprise-scale web applications for Fortune 500 companies. Expert across the JavaScript ecosystem — React, Node.js, TypeScript — with deep expertise in system design, database optimization, and AI-driven development. Proven track record of delivering high-impact platforms, mentoring engineering teams, and driving measurable performance improvements.`

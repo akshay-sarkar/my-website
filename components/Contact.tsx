@@ -22,7 +22,12 @@ export default function Contact() {
         }),
       })
       const data = await res.json()
-      setStatus(data.success ? 'success' : 'error')
+      if (data.success) {
+        setStatus('success')
+        setForm({ name: '', email: '', message: '' })
+      } else {
+        setStatus('error')
+      }
     } catch {
       setStatus('error')
     }
@@ -56,11 +61,11 @@ export default function Contact() {
             </a>
             <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-accent transition-colors">
               <Linkedin size={20} className="text-accent flex-shrink-0" />
-              <span>linkedin.com/in/akshaysarkaruta</span>
+              <span>{personal.linkedin.replace('https://www.', '').replace('https://', '')}</span>
             </a>
             <a href={personal.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-accent transition-colors">
               <Github size={20} className="text-accent flex-shrink-0" />
-              <span>github.com/akshay-sarkar</span>
+              <span>{personal.github.replace('https://', '')}</span>
             </a>
             <div className="flex items-center gap-3 text-slate-600">
               <MapPin size={20} className="text-accent flex-shrink-0" />
@@ -111,6 +116,9 @@ export default function Contact() {
             </button>
             {status === 'error' && (
               <p className="text-red-500 text-sm">Something went wrong. Please try again.</p>
+            )}
+            {status === 'success' && (
+              <p className="text-green-600 text-sm">Message sent! I&apos;ll get back to you soon.</p>
             )}
           </motion.form>
         </div>
