@@ -24,7 +24,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Contact />
       <About />
       <Experience />
       <Skills />
@@ -32,6 +31,7 @@ export default function Home() {
       <Education />
       <Certifications />
       <Awards />
+      <Contact />
       <Footer />
     </main>
   )
