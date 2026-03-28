@@ -17,7 +17,6 @@ export default function Contact() {
       formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string);
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: formData
       })
       const data = await res.json()
