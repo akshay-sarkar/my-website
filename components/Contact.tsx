@@ -13,13 +13,12 @@ export default function Contact() {
     e.preventDefault()
     setStatus('sending')
     try {
+      const formData = new FormData(e.target as HTMLFormElement);
+      formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string);
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-          ...form,
-        }),
+        body: formData
       })
       const data = await res.json()
       if (data.success) {

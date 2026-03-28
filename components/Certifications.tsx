@@ -18,7 +18,7 @@ export default function Certifications() {
           <div className="w-12 h-1 bg-accent rounded mb-10" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-10">
           {/* Courses */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -30,9 +30,9 @@ export default function Certifications() {
               <BookOpen size={18} className="text-accent" />
               <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider font-mono">Courses</h3>
             </div>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-row flex-wrap gap-3">
               {certifications.courses.map((c) => (
-                <li key={c.name} className="flex flex-col">
+                <li key={c.name} className="flex flex-col bg-white border border-slate-200 rounded-lg px-4 py-3">
                   <span className="text-sm text-primary-text">{c.name}</span>
                   <span className="text-xs text-slate-400 font-mono">
                     {c.issuer}{'date' in c && c.date ? ` · ${c.date}` : ''}
@@ -53,9 +53,9 @@ export default function Certifications() {
               <Award size={18} className="text-accent" />
               <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider font-mono">Credentials</h3>
             </div>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-row flex-wrap gap-3">
               {certifications.credentials.map((c) => (
-                <li key={c.name} className="flex flex-col gap-1">
+                <li key={c.name} className="flex flex-col gap-1 bg-white border border-slate-200 rounded-lg px-4 py-3">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-sm text-primary-text">{c.name}</span>
                     {c.inProgress && (
@@ -71,7 +71,7 @@ export default function Certifications() {
           </motion.div>
 
           {/* Academic */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -91,7 +91,7 @@ export default function Certifications() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

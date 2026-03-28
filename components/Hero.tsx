@@ -59,11 +59,6 @@ export default function Hero() {
             className="object-cover"
             priority
           />
-          {personal.photoUrl === undefined && (
-            <span className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm font-mono pointer-events-none select-none">
-              Add Photo
-            </span>
-          )}
         </div>
       </motion.div>
     </section>

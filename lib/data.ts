@@ -7,8 +7,8 @@ export const personal = {
   location: 'Irving, Texas, United States',
   linkedin: 'https://www.linkedin.com/in/akshaysarkaruta/',
   github: 'https://github.com/akshay-sarkar',
-  resumeUrl: '/akshay-sarkar-resume.pdf',
-  photoUrl: undefined as string | undefined,  // Set to '/your-photo.jpg' when ready
+  resumeUrl: '/Akshay-Sarkar-Resume.docx',
+  photoUrl: '/photo-placeholder.jpg',  // Set to '/your-photo.jpg' when ready
 }
 
 export const about = `Senior Full Stack Engineer with 12+ years of experience architecting enterprise-scale web applications for Fortune 500 companies. Expert across the JavaScript ecosystem — React, Node.js, TypeScript — with deep expertise in system design, database optimization, and AI-driven development. Proven track record of delivering high-impact platforms, mentoring engineering teams, and driving measurable performance improvements.`
@@ -55,14 +55,6 @@ export const experience = [
     bullets: [
       'Developed an HTML5 Facebook application for Set-Top Boxes covering 100+ TV shows with OAuth login.',
       'Built a virtual keyboard for Airtel Set-Top Boxes supporting 15+ remote key configurations.',
-    ],
-  },
-  {
-    company: "R'TA Securities",
-    title: 'Software Developer',
-    dates: null,
-    location: 'India',
-    bullets: [
       'Built a GPS-enabled real-time security tracking system monitoring 50+ field officers.',
       'Created an administrative portal for managing officer configurations and deployments.',
     ],
@@ -118,7 +110,7 @@ export const projects = [
   },
   {
     name: 'GPS Security Tracking System',
-    company: "R'TA Securities",
+    company: "Aseema Softnet",
     description: 'Real-time GPS-based field officer tracking system with an administrative management portal.',
     techStack: ['GPS', 'JavaScript', 'REST'],
     impact: '50+ field officers monitored',
@@ -146,17 +138,16 @@ export const certifications = {
     { name: 'React.js Essential Training', issuer: 'LinkedIn Learning' },
     { name: 'Node.js Essential Training', issuer: 'LinkedIn Learning' },
     { name: 'MySQL Essential Training', issuer: 'LinkedIn Learning' },
+    { name: 'Learning Next.js', issuer: 'LinkedIn Learning', date: 'Feb 2026' },
     { name: 'ChatGPT Prompt Engineering', issuer: 'LinkedIn Learning' },
     { name: 'GraphQL Essential Training', issuer: 'LinkedIn Learning', date: 'Jun 2025' },
-    { name: 'Learning Next.js', issuer: 'LinkedIn Learning', date: 'Feb 2026' },
+
   ],
   credentials: [
     { name: 'Java/J2EE Diploma', issuer: 'NIIT', inProgress: false },
     { name: 'Claude AI Certification', issuer: 'Anthropic', inProgress: true },
-  ],
-  academic: [
-    { name: 'Teaching Assistant, Web Data Management', issuer: 'University of Texas at Arlington', date: '2018' },
-  ],
+    { name: 'Hire Human', issuer: 'LaunchCode', inProgress: true },
+  ]
 }
 
 export const awards = [
@@ -165,6 +156,12 @@ export const awards = [
     event: 'Paycom Code-a-thon',
     year: '2020',
     description: 'Recognized as Team MVP at the annual Paycom engineering hackathon.',
+  },
+  {
+    title: 'Innovation Award Nominee',
+    event: 'Paycom Payroll',
+    year: '2021',
+    description: 'Nominated for Innovation Award for developing Notification Event System',
   },
   {
     title: 'Employee of the Year',
