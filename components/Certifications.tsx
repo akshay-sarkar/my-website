@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { BookOpen, Award, GraduationCap } from 'lucide-react'
+import { BookOpen, Award } from 'lucide-react'
 import { certifications } from '@/lib/data'
 
 export default function Certifications() {
