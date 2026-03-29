@@ -123,12 +123,14 @@ export const education = [
     institution: 'University of Texas at Arlington',
     years: '2017 – 2018',
     detail: 'GPA: 4.0',
+    location: 'Arlington, Texas, United States',
   },
   {
     degree: 'Bachelor of Engineering, Computer Science',
     institution: 'Visvesvaraya Technological University',
     years: '2007 – 2011',
-    detail: 'India',
+    detail: '',
+    location: 'Bengaluru, Karnataka, India',
   },
 ]
 
@@ -138,9 +140,9 @@ export const certifications = {
     { name: 'React.js Essential Training', issuer: 'LinkedIn Learning' },
     { name: 'Node.js Essential Training', issuer: 'LinkedIn Learning' },
     { name: 'MySQL Essential Training', issuer: 'LinkedIn Learning' },
-    { name: 'Learning Next.js', issuer: 'LinkedIn Learning', date: 'Feb 2026' },
+    { name: 'Learning Next.js', issuer: 'LinkedIn Learning'},
     { name: 'ChatGPT Prompt Engineering', issuer: 'LinkedIn Learning' },
-    { name: 'GraphQL Essential Training', issuer: 'LinkedIn Learning', date: 'Jun 2025' },
+    { name: 'GraphQL Essential Training', issuer: 'LinkedIn Learning' },
 
   ],
   credentials: [

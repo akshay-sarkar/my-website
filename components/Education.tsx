@@ -34,7 +34,7 @@ export default function Education() {
               <div>
                 <h3 className="text-base font-semibold text-primary-text">{edu.degree}</h3>
                 <p className="text-sm text-slate-500 mt-0.5">{edu.institution}</p>
-                <p className="text-xs font-mono text-slate-400 mt-1">{edu.years} · {edu.detail}</p>
+                <p className="text-xs font-mono text-slate-400 mt-1">{edu.years}{edu.detail ? ` · ${edu.detail}` : ''} · {edu.location}</p>
               </div>
             </motion.div>
           ))}
